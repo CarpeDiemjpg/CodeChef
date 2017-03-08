@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() 
+{
+    long long i,t,n,s,k,j;
+    scanf("%lld",&t);
+    for(i=1;i<=t;i++)
+    {
+        scanf("%lld",&n);
+        long long a[n],min=2000000;
+        for(k=0;k<n;k++)
+        {
+            scanf("%lld",&a[k]);
+        }
+        for(k=0;k<n;k++)
+        {
+            for(j=k+1;j<n;j++)
+            {
+                s=a[k]+a[j];
+                if(s<min)
+                   min=s;
+            }
+        }
+        printf("%lld\n",min);
+    }
+	return 0;
+}
