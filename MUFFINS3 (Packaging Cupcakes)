@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() 
+{
+    long long i,t,n,s;
+    scanf("%lld",&t);
+    for(i=1;i<=t;i++)
+    {
+        scanf("%lld",&n);
+        if(n%2==0)
+            s=n/2+1;
+        else
+            s=(n+1)/2;
+        printf("%lld\n",s);
+    }
+	return 0;
+}
