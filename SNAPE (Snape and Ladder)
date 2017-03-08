@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+int main() 
+{
+    int t,i,a,b;
+    float cmin,cmax;
+    scanf("%d",&t);
+    for(i=1;i<=t;i++)
+    {
+        scanf("%d %d",&a,&b);
+        cmax=sqrt(a*a+b*b);
+        cmin=sqrt(b*b-a*a);
+        printf("%f %f\n",cmin,cmax);
+    }
+	return 0;
+}
